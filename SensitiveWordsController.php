@@ -11,7 +11,6 @@ class SensitiveWordsController extends Controller
 {
 
     /*
-     * 2019-6-17
      * param $content 动态的内容敏感词过滤
      * return code 为200给后端存入数据库
      * return code 为400给前端返回给用户动态内容含有敏感词
