@@ -18,9 +18,8 @@ class SensitiveWordsController extends Controller
      * */
     public function seWords(Request $request)
     {
-        $content = $request->input('neirong');
-        $sensitiveWords = 'sensitive.txt';
-        $fake = file_get_contents($sensitiveWords); // 读取关键字文本信息 这个文本就是敏感词的文本网上都有 最好选择最新最全的
+        $content = $request->input('content');
+        $fake = file_get_contents("'sensitive.txt'"); // 读取关键字文本信息 这个文本就是敏感词的文本网上都有 最好选择最新最全的
         $content = trim($content); 
         $fuckArr = explode("\n",$fake); 
         $arr= [];
